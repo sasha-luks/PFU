@@ -1,0 +1,1300 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="csrf-token" content="">
+
+        <style>
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../../../../../storage/fonts/10155ba347/slatov23s6u8w4bmutphjxsaui-qnixg7eu0.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../../../../../storage/fonts/10155ba347/slatov23s6u8w4bmutphjxsaxc-qnixg7q.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../../../../../storage/fonts/10155ba347/slatov23s6u-w4bmutphjxsi5wq-fqftx9897sxz.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../../../../../storage/fonts/10155ba347/slatov23s6u-w4bmutphjxsi5wq-gwftx9897g.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../../../../../storage/fonts/10155ba347/slatov23s6uyw4bmutphjxawxiwtfcfq7a.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../../../../../storage/fonts/10155ba347/slatov23s6uyw4bmutphjx4wxiwtfcc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../../../../../storage/fonts/10155ba347/slatov23s6u9w4bmutphh6uvswapgq3q5d0n7w.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../../../../../storage/fonts/10155ba347/slatov23s6u9w4bmutphh6uvswipgq3q5d0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../../../../../storage/fonts/10155ba347/squicksandv306xktdszam9ie8kbpra-hjfqnyudyp7bh.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../../../../../storage/fonts/10155ba347/squicksandv306xktdszam9ie8kbpra-hjvqnyudyp7bh.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../../../../../storage/fonts/10155ba347/squicksandv306xktdszam9ie8kbpra-hk1qnyudypw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../../../../../storage/fonts/10155ba347/squicksandv306xktdszam9ie8kbpra-hjfqnyudyp7bh.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../../../../../storage/fonts/10155ba347/squicksandv306xktdszam9ie8kbpra-hjvqnyudyp7bh.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../../../../../storage/fonts/10155ba347/squicksandv306xktdszam9ie8kbpra-hk1qnyudypw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../../../../../storage/fonts/10155ba347/squicksandv306xktdszam9ie8kbpra-hjfqnyudyp7bh.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../../../../../storage/fonts/10155ba347/squicksandv306xktdszam9ie8kbpra-hjvqnyudyp7bh.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../../../../../storage/fonts/10155ba347/squicksandv306xktdszam9ie8kbpra-hk1qnyudypw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../../../../../storage/fonts/10155ba347/squicksandv306xktdszam9ie8kbpra-hjfqnyudyp7bh.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../../../../../storage/fonts/10155ba347/squicksandv306xktdszam9ie8kbpra-hjvqnyudyp7bh.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../../../../../storage/fonts/10155ba347/squicksandv306xktdszam9ie8kbpra-hk1qnyudypw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+
+    <style>
+        :root {
+            --font-text: Lato, sans-serif;
+            --font-heading: Quicksand, sans-serif;
+            --color-brand: #3BB77E;
+            --color-brand-rgb: 59,183,126;
+            --color-brand-dark: #29A56C;
+            --color-brand-2: #FDC040;
+            --color-primary: #5a97fa;
+            --color-secondary: #3e5379;
+            --color-warning: #ff9900;
+            --color-danger: #FD6E6E;
+            --color-success: #81B13D;
+            --color-info: #2cc1d8;
+            --color-text: #7E7E7E;
+            --color-heading: #253D4E;
+            --color-grey-1: #253D4E;
+            --color-grey-2: #242424;
+            --color-grey-4: #adadad;
+            --color-grey-9: #f4f5f9;
+            --color-muted: #B6B6B6;
+            --color-body: #7E7E7E;
+        }
+    </style>
+
+    
+    <meta name="robots" content="index,follow">
+
+<title>404 - Not found</title>
+<meta name="description" content="Nest is an attractive Laravel multivendor eCommerce script specially designed for the multipurpose shops like mega store, grocery store, supermarket, organic shop, and online stores selling products like beverages, vegetables, fruits, ice creams, paste, herbs, juice, meat, cold drinks, sausages, cocktails, soft drinks, cookies…">
+<meta property="og:site_name" content="Nest - Laravel Multipurpose eCommerce Script">
+<meta property="og:type" content="website">
+<meta property="og:title" content="404 - Not found">
+<meta property="og:image" content="../../../../../storage/general/open-graph-image.png">
+<meta name="twitter:title" content="404 - Not found">
+
+    <link href="../../../../../storage/general/favicon.png" rel="shortcut icon">
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Nest - Laravel Multipurpose eCommerce Script",
+  "url": "https://nest.botble.com"
+}
+</script>
+
+<link media="all" type="text/css" rel="stylesheet" href="../../vendors/normalize.css">
+<link media="all" type="text/css" rel="stylesheet" href="../../../plugins/bootstrap/css/bootstrap.min.css">
+<link media="all" type="text/css" rel="stylesheet" href="../../vendors/uicons-regular-straight.css">
+<link media="all" type="text/css" rel="stylesheet" href="../animate.min.css">
+<link media="all" type="text/css" rel="stylesheet" href="../slick.css">
+<link media="all" type="text/css" rel="stylesheet" href="../../style_v%3D1.19.5.css">
+
+
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"BreadcrumbList","itemListElement":[]}</script>
+
+
+
+<script>
+    window.siteUrl = "https://nest.botble.com";
+</script>
+
+
+    </head>
+<body>
+    
+    <div id="alert-container"></div>
+
+    <style>
+            .preloader {
+                position         : fixed;
+                top              : 0;
+                left             : 0;
+                width            : 100%;
+                height           : 100%;
+                z-index          : 99999;
+                background-color : rgba(255, 255, 255, 0.82);
+            }
+
+            .preloader .preloader-loading {
+                position  : absolute;
+                top       : 50%;
+                left      : 50%;
+                transform : translate(-50%, -50%);
+                display   : block;
+            }
+
+            .preloader .preloader-loading::after {
+                content           : " ";
+                display           : block;
+                border-radius     : 50%;
+                border-width      : 1px;
+                border-style      : solid;
+                -webkit-animation : lds-dual-ring 0.5s linear infinite;
+                animation         : lds-dual-ring 0.5s linear infinite;
+                width             : 40px;
+                height            : 40px;
+                border-color      : var(--color-brand) transparent var(--color-brand) transparent;
+            }
+
+            @keyframes lds-dual-ring {
+                0% {
+                    transform : rotate(0deg);
+                }
+                100% {
+                    transform : rotate(360deg);
+                }
+            }
+
+            @-webkit-keyframes lds-dual-ring {
+                0% {
+                    transform : rotate(0deg);
+                }
+                100% {
+                    transform : rotate(360deg);
+                }
+            }
+        </style>
+        <div class="preloader" id="preloader-active">
+            <div class="preloader-loading"></div>
+        </div>
+    
+
+<header class="header-area header-style-1 header-height-2 ">
+    <div class="mobile-promotion">
+        <span>Grand opening, <strong>up to 15%</strong> off all items. Only <strong>3 days</strong> left</span>
+    </div>
+<div class="header-top header-top-ptb-1 d-none d-lg-block">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-xl-3 col-lg-6">
+                <div class="header-info">
+                    <ul>
+                <li>
+            <a href="https://nest.botble.com/about-us" title="About Us">
+                                <span>About Us</span>
+            </a>
+                    </li>
+            <li>
+            <a href="https://nest.botble.com/orders/tracking" title="Order Tracking">
+                                <span>Order Tracking</span>
+            </a>
+                    </li>
+    </ul>
+
+                </div>
+            </div>
+            <div class="col-xl-5 d-none d-xl-block">
+                <div class="text-center">
+                                            <div id="news-flash" class="d-inline-block">
+                            <ul>
+                                                                                                            <li>
+                                                                                            <i class="fi-rs-bell d-inline-block mr-5"></i>&nbsp;
+                                            
+                                                                                            <span class="d-inline-block">
+                                                    <b class="text-success"> Trendy 25</b> silver jewelry, save up 35% off today
+                                                </span>
+                                                                                                                                        <a class="active d-inline-block" href="https://nest.botble.com/products">&nbsp;Shop now</a>
+                                                                                    </li>
+                                                                                                                                                <li style="display: none">
+                                                                                            <i class="fi-rs-asterisk d-inline-block mr-5"></i>&nbsp;
+                                            
+                                                                                            <span class="d-inline-block">
+                                                    <b class="text-danger">Super Value Deals</b> - Save more with coupons
+                                                </span>
+                                                                                                                                </li>
+                                                                                                                                                <li style="display: none">
+                                                                                            <i class="fi-rs-angle-double-right d-inline-block mr-5"></i>&nbsp;
+                                            
+                                                                                            <span class="d-inline-block">
+                                                    Get great devices up to 50% off
+                                                </span>
+                                                                                                                                        <a class="active d-inline-block" href="https://nest.botble.com/products">&nbsp;View details</a>
+                                                                                    </li>
+                                                                                                </ul>
+                        </div>
+                                    </div>
+            </div>
+                        <div class="col-xl-4 col-lg-6">
+                <div class="header-info header-info-right">
+                    <ul>
+                                                    <li>Need help? Call Us: &nbsp;<strong class="text-brand"> 1900 - 888</strong></li>
+                        
+                                                    <li>
+            <a class="language-dropdown-active" href="#">                     <img src="../../../../../vendor/core/core/base/img/flags/us.svg" title="English" class="flag" style="height: 16px" alt="English flag">
+                                                    English
+                                <i class="fi-rs-angle-small-down"></i>
+            </a>
+            <ul class="language-dropdown ">
+                                                                                                <li>
+                            <a href="https://nest.botble.com/vi/themes/nest/css/plugins/images/ui-icons_777777_256x240.html">
+                                <img src="../../../../../vendor/core/core/base/img/flags/vn.svg" title="Tiếng Việt" class="flag" style="height: 16px" alt="Tiếng Việt flag">                                &nbsp;<span>Tiếng Việt</span>                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="https://nest.botble.com/ar/themes/nest/css/plugins/images/ui-icons_777777_256x240.html">
+                                <img src="../../../../../vendor/core/core/base/img/flags/sa.svg" title="Arabic" class="flag" style="height: 16px" alt="Arabic flag">                                &nbsp;<span>Arabic</span>                            </a>
+                        </li>
+                                                </ul>
+        </li>
+    
+                        
+                                                    <li>
+                                <a class="language-dropdown-active" href="#">USD <i class="fi-rs-angle-small-down"></i></a>
+                                <ul class="language-dropdown">
+                                                                            <li><a href="https://nest.botble.com/currency/switch/USD">USD</a></li>
+                                                                            <li><a href="https://nest.botble.com/currency/switch/EUR">EUR</a></li>
+                                                                            <li><a href="https://nest.botble.com/currency/switch/VND">VND</a></li>
+                                                                    </ul>
+                            </li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header-middle header-middle-ptb-1 d-none d-lg-block">
+    <div class="container">
+        <div class="header-wrap">
+                            <div class="logo logo-width-1">
+                    <a href="https://nest.botble.com"><img src="../../../../../storage/general/logo.png" alt="Nest - Laravel Multipurpose eCommerce Script"></a>
+                </div>
+            
+            <div class="header-right">
+                                    <div class="search-style-2">
+                        <form action="https://nest.botble.com/products" class="form--quick-search" data-ajax-url="https://nest.botble.com/ajax/search-products" method="GET">
+                            <div class="form-group--icon position-relative">
+                                <div class="product-cat-label">All Categories</div>
+                                <select class="product-category-select" name="categories[]" aria-label="Select category">
+                                    <option value="">All Categories</option>
+                                    <option value="1">Milks and Dairies</option>
+
+                    <option value="2">Clothing &amp; beauty</option>
+
+                    <option value="3">Pet Toy</option>
+
+                    <option value="4">Baking material</option>
+
+                    <option value="5">Fresh Fruit</option>
+
+                    <option value="6">Wines &amp; Drinks</option>
+
+                    <option value="7">Fresh Seafood</option>
+
+                    <option value="8">Fast food</option>
+
+                    <option value="9">Vegetables</option>
+
+                    <option value="10">Bread and Juice</option>
+
+                    <option value="11">Cake &amp; Milk</option>
+
+                    <option value="12">Coffee &amp; Teas</option>
+
+                    <option value="13">Pet Foods</option>
+
+                    <option value="14">Diet Foods</option>
+
+            
+                                </select>
+                            </div>
+                            <input type="text" class="input-search-product" name="q" placeholder="Search for items..." value="" autocomplete="off">
+                            <div class="panel--search-result"></div>
+                        </form>
+                    </div>
+                    <div class="header-action-right">
+                        <div class="header-action-2">
+                                                            <div class="header-action-icon-2">
+                                    <a href="https://nest.botble.com/compare">
+                                        <img class="svgInject" alt="Compare" src="../../../imgs/theme/icons/icon-compare.svg">
+                                        <span class="pro-count blue compare-count">0</span>
+                                    </a>
+                                    <a href="https://nest.botble.com/compare"><span class="lable">Compare</span></a>
+                                </div>
+                                                                                        <div class="header-action-icon-2">
+                                    <a href="https://nest.botble.com/wishlist">
+                                        <img class="svgInject" alt="Wishlist" src="../../../imgs/theme/icons/icon-heart.svg">
+                                        <span class="pro-count blue wishlist-count"> 0 </span>
+                                    </a>
+                                    <a href="https://nest.botble.com/wishlist"><span class="lable">Wishlist</span></a>
+                                </div>
+                                                        <div class="header-action-icon-2">
+                                <a class="mini-cart-icon" href="https://nest.botble.com/cart">
+                                    <img alt="Cart" src="../../../imgs/theme/icons/icon-cart.svg">
+                                    <span class="pro-count blue">0</span>
+                                </a>
+                                <a href="https://nest.botble.com/cart"><span class="lable">Cart</span></a>
+                                <div class="cart-dropdown-wrap cart-dropdown-hm2 cart-dropdown-panel">
+                                    <span>No products in the cart.</span>
+
+                                </div>
+                            </div>
+                            <div class="header-action-icon-2">
+                                <a href="https://nest.botble.com/customer/overview">
+                                    <img class="svgInject rounded-circle" alt="Account" src="../../../imgs/theme/icons/icon-user.svg">
+                                </a>
+                                <a href="https://nest.botble.com/customer/overview"><span class="lable me-1">Account</span></a>
+                                <div class="cart-dropdown-wrap cart-dropdown-hm2 account-dropdown">
+                                    <ul>
+                                                                                    <li><a href="https://nest.botble.com/login"><i class="fi fi-rs-user mr-10"></i>Login</a></li>
+                                            <li><a href="https://nest.botble.com/register"><i class="fi fi-rs-user-add mr-10"></i>Register</a></li>
+                                                                            </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                            </div>
+        </div>
+    </div>
+</div>
+<div class="header-bottom header-bottom-bg-color  sticky-bar ">
+    <div class="container">
+        <div class="header-wrap header-space-between position-relative">
+                            <div class="logo logo-width-1 d-block d-lg-none">
+                    <a href="https://nest.botble.com"><img src="../../../../../storage/general/logo.png" alt="Nest - Laravel Multipurpose eCommerce Script"></a>
+                </div>
+                        <div class="header-nav d-none d-lg-flex">
+                                    <div class="main-categories-wrap d-none d-lg-block">
+                        <a class="categories-button-active" href="#">
+                            <span class="fi-rs-apps"></span> <span class="et">Browse</span> All Categories
+                            <i class="fi-rs-angle-down"></i>
+                        </a>
+                        <div class="categories-dropdown-wrap categories-dropdown-active-large font-heading">
+                            
+                            <div class="d-flex categories-dropdown-inner">
+                                <ul>
+                    <li>
+                <a href="https://nest.botble.com/product-categories/milks-and-dairies">
+                                            <img src="../../../../../storage/product-categories/icon-1.png" alt="Milks and Dairies" width="30" height="30">
+                     Milks and Dairies
+                </a>
+            </li>
+                    <li>
+                <a href="https://nest.botble.com/product-categories/clothing-beauty">
+                                            <img src="../../../../../storage/product-categories/icon-2.png" alt="Clothing &amp; beauty" width="30" height="30">
+                     Clothing &amp; beauty
+                </a>
+            </li>
+                    <li>
+                <a href="https://nest.botble.com/product-categories/pet-toy">
+                                            <img src="../../../../../storage/product-categories/icon-3.png" alt="Pet Toy" width="30" height="30">
+                     Pet Toy
+                </a>
+            </li>
+                    <li>
+                <a href="https://nest.botble.com/product-categories/baking-material">
+                                            <img src="../../../../../storage/product-categories/icon-4.png" alt="Baking material" width="30" height="30">
+                     Baking material
+                </a>
+            </li>
+                    <li>
+                <a href="https://nest.botble.com/product-categories/fresh-fruit">
+                                            <img src="../../../../../storage/product-categories/icon-5.png" alt="Fresh Fruit" width="30" height="30">
+                     Fresh Fruit
+                </a>
+            </li>
+            </ul>
+    <ul class="end">
+                    <li>
+                <a href="https://nest.botble.com/product-categories/wines-drinks">
+                                            <img src="../../../../../storage/product-categories/icon-6.png" alt="Wines &amp; Drinks" width="30" height="30">
+                     Wines &amp; Drinks
+                </a>
+            </li>
+                    <li>
+                <a href="https://nest.botble.com/product-categories/fresh-seafood">
+                                            <img src="../../../../../storage/product-categories/icon-7.png" alt="Fresh Seafood" width="30" height="30">
+                     Fresh Seafood
+                </a>
+            </li>
+                    <li>
+                <a href="https://nest.botble.com/product-categories/fast-food">
+                                            <img src="../../../../../storage/product-categories/icon-8.png" alt="Fast food" width="30" height="30">
+                     Fast food
+                </a>
+            </li>
+                    <li>
+                <a href="https://nest.botble.com/product-categories/vegetables">
+                                            <img src="../../../../../storage/product-categories/icon-9.png" alt="Vegetables" width="30" height="30">
+                     Vegetables
+                </a>
+            </li>
+                    <li>
+                <a href="https://nest.botble.com/product-categories/bread-and-juice">
+                                            <img src="../../../../../storage/product-categories/icon-10.png" alt="Bread and Juice" width="30" height="30">
+                     Bread and Juice
+                </a>
+            </li>
+            </ul>
+
+                            </div>
+                                                            <div class="more_slide_open" style="display: none">
+                                    <div class="d-flex categories-dropdown-inner">
+                                        <ul>
+                    <li>
+                <a href="https://nest.botble.com/product-categories/cake-milk">
+                                            <img src="../../../../../storage/product-categories/icon-11.png" alt="Cake &amp; Milk" width="30" height="30">
+                     Cake &amp; Milk
+                </a>
+            </li>
+                    <li>
+                <a href="https://nest.botble.com/product-categories/coffee-teas">
+                                            <img src="../../../../../storage/product-categories/icon-12.png" alt="Coffee &amp; Teas" width="30" height="30">
+                     Coffee &amp; Teas
+                </a>
+            </li>
+            </ul>
+    <ul class="end">
+                    <li>
+                <a href="https://nest.botble.com/product-categories/pet-foods">
+                                            <img src="../../../../../storage/product-categories/icon-13.png" alt="Pet Foods" width="30" height="30">
+                     Pet Foods
+                </a>
+            </li>
+                    <li>
+                <a href="https://nest.botble.com/product-categories/diet-foods">
+                                            <img src="../../../../../storage/product-categories/icon-14.png" alt="Diet Foods" width="30" height="30">
+                     Diet Foods
+                </a>
+            </li>
+            </ul>
+
+                                    </div>
+                                </div>
+                                                                                        <div class="more_categories"><span class="icon"></span> <span class="heading-sm-1">Show more...</span></div>
+                                                    </div>
+                    </div>
+                
+                <div class="main-menu main-menu-padding-1 main-menu-lh-2 d-none d-lg-block font-heading">
+                    <nav>
+                        <ul>
+                <li>
+            <a href="https://nest.botble.com/" target="_self">
+                <i class="menu-icon fi-rs-home"></i>&nbsp;Home
+                                     <i class="fi-rs-angle-down"></i>                             </a>
+                            <ul class="sub-menu">
+                <li>
+            <a href="https://nest.botble.com/" target="_self">
+                Home 1
+                            </a>
+                    </li>
+            <li>
+            <a href="https://nest.botble.com/homepage-2" target="_self">
+                Home 2
+                            </a>
+                    </li>
+            <li>
+            <a href="https://nest.botble.com/homepage-3" target="_self">
+                Home 3
+                            </a>
+                    </li>
+            <li>
+            <a href="https://nest.botble.com/homepage-4" target="_self">
+                Home 4
+                            </a>
+                    </li>
+            <li>
+            <a href="https://nest.botble.com/homepage-5" target="_self">
+                Home 5
+                            </a>
+                    </li>
+            <li>
+            <a href="https://nest.botble.com/homepage-6" target="_self">
+                Home 6
+                            </a>
+                    </li>
+    </ul>
+
+                    </li>
+            <li>
+            <a href="https://nest.botble.com/products" target="_self">
+                Shop
+                                     <i class="fi-rs-angle-down"></i>                             </a>
+                            <ul class="sub-menu">
+                <li>
+            <a href="https://nest.botble.com/products" target="_self">
+                Shop Grid - Full Width
+                            </a>
+                    </li>
+            <li>
+            <a href="https://nest.botble.com/products?layout=product-right-sidebar" target="_self">
+                Shop Grid - Right Sidebar
+                            </a>
+                    </li>
+            <li>
+            <a href="https://nest.botble.com/products?layout=product-left-sidebar" target="_self">
+                Shop Grid - Left Sidebar
+                            </a>
+                    </li>
+            <li>
+            <a href="https://nest.botble.com/product-categories/milks-and-dairies" target="_self">
+                Products Of Category
+                            </a>
+                    </li>
+    </ul>
+
+                    </li>
+            <li>
+            <a href="https://nest.botble.com/stores" target="_self">
+                Stores
+                                     <i class="fi-rs-angle-down"></i>                             </a>
+                            <ul class="sub-menu">
+                <li>
+            <a href="https://nest.botble.com/stores" target="_self">
+                Stores - Grid
+                            </a>
+                    </li>
+            <li>
+            <a href="https://nest.botble.com/stores?layout=stores-list" target="_self">
+                Stores - List
+                            </a>
+                    </li>
+            <li>
+            <a href="https://nest.botble.com/stores/gopro" target="_self">
+                Store - Detail
+                            </a>
+                    </li>
+    </ul>
+
+                    </li>
+            <li>
+            <a href="https://nest.botble.com/products/seeds-of-change-organic-quinoe-digital" target="_self">
+                Product
+                                     <i class="fi-rs-angle-down"></i>                             </a>
+                            <ul class="sub-menu">
+                <li>
+            <a href="https://nest.botble.com/products/seeds-of-change-organic-quinoe-digital" target="_self">
+                Product Right Sidebar
+                            </a>
+                    </li>
+            <li>
+            <a href="https://nest.botble.com/products/all-natural-italian-style-chicken-meatballs" target="_self">
+                Product Left Sidebar
+                            </a>
+                    </li>
+            <li>
+            <a href="https://nest.botble.com/products/angies-boomchickapop-sweet-salty-kettle-corn" target="_self">
+                Product Full Width
+                            </a>
+                    </li>
+    </ul>
+
+                    </li>
+            <li>
+            <a href="https://nest.botble.com/blog" target="_self">
+                Blog
+                                     <i class="fi-rs-angle-down"></i>                             </a>
+                            <ul class="sub-menu">
+                <li>
+            <a href="https://nest.botble.com/blog" target="_self">
+                Blog Grid
+                            </a>
+                    </li>
+            <li>
+            <a href="https://nest.botble.com/blog-list" target="_self">
+                Blog List
+                            </a>
+                    </li>
+            <li>
+            <a href="https://nest.botble.com/blog-big" target="_self">
+                Blog Big
+                            </a>
+                    </li>
+            <li>
+            <a href="https://nest.botble.com/blog-wide" target="_self">
+                Blog Wide
+                            </a>
+                    </li>
+            <li>
+            <a href="https://nest.botble.com/blog/4-expert-tips-on-how-to-choose-the-right-mens-wallet" target="_self">
+                Single Post
+                                     <i class="fi-rs-angle-right"></i>                             </a>
+                            <ul class="level-menu level-menu-modify">
+                <li>
+            <a href="https://nest.botble.com/blog/4-expert-tips-on-how-to-choose-the-right-mens-wallet" target="_self">
+                Single Post Right Sidebar
+                            </a>
+                    </li>
+            <li>
+            <a href="https://nest.botble.com/blog/sexy-clutches-how-to-buy-wear-a-designer-clutch-bag" target="_self">
+                Single Post Left Sidebar
+                            </a>
+                    </li>
+            <li>
+            <a href="https://nest.botble.com/blog/the-top-2020-handbag-trends-to-know" target="_self">
+                Single Post Full Width
+                            </a>
+                    </li>
+            <li>
+            <a href="https://nest.botble.com/blog/how-to-match-the-color-of-your-handbag-with-an-outfit" target="_self">
+                Single Post with Product Listing
+                            </a>
+                    </li>
+    </ul>
+
+                    </li>
+    </ul>
+
+                    </li>
+            <li>
+            <a href="https://nest.botble.com/faq" target="_self">
+                FAQ
+                            </a>
+                    </li>
+            <li>
+            <a href="https://nest.botble.com/contact" target="_self">
+                Contact
+                            </a>
+                    </li>
+    </ul>
+
+                    </nav>
+                </div>
+            </div>
+                            <div class="hotline d-none d-lg-flex">
+                    <img src="../../../imgs/theme/icons/icon-headphone.svg" alt="hotline">
+                    <p>1900 - 888<span>24/7 Support Center</span></p>
+                </div>
+                        <div class="header-action-icon-2 d-block d-lg-none">
+                <div class="burger-icon burger-icon-white">
+                    <span class="burger-icon-top"></span>
+                    <span class="burger-icon-mid"></span>
+                    <span class="burger-icon-bottom"></span>
+                </div>
+            </div>
+                            <div class="header-action-right d-block d-lg-none">
+                    <div class="header-action-2">
+                                                    <div class="header-action-icon-2">
+                                <a href="https://nest.botble.com/compare">
+                                    <img alt="Compare" src="../../../imgs/theme/icons/icon-compare.svg">
+                                    <span class="pro-count white compare-count">0</span>
+                                </a>
+                            </div>
+                                                                            <div class="header-action-icon-2">
+                                <a href="https://nest.botble.com/wishlist">
+                                    <img alt="Wishlist" src="../../../imgs/theme/icons/icon-heart.svg">
+                                    <span class="pro-count white wishlist-count"> 0 </span>
+                                </a>
+                            </div>
+                                                                            <div class="header-action-icon-2">
+                                <a class="mini-cart-icon" href="#">
+                                    <img alt="Cart" src="../../../imgs/theme/icons/icon-cart.svg">
+                                    <span class="pro-count white">0</span>
+                                </a>
+                                <div class="cart-dropdown-wrap cart-dropdown-hm2 cart-dropdown-panel">
+                                    <span>No products in the cart.</span>
+
+                                </div>
+                            </div>
+                                            </div>
+                </div>
+                    </div>
+    </div>
+</div>
+</header>
+<div class="mobile-header-active mobile-header-wrapper-style">
+<div class="mobile-header-wrapper-inner">
+    <div class="mobile-header-top">
+                    <div class="mobile-header-logo">
+                <a href="https://nest.botble.com"><img src="../../../../../storage/general/logo.png" alt="Nest - Laravel Multipurpose eCommerce Script"></a>
+            </div>
+                <div class="mobile-menu-close close-style-wrap close-style-position-inherit">
+            <button class="close-style search-close">
+                <i class="icon-top"></i>
+                <i class="icon-bottom"></i>
+            </button>
+        </div>
+    </div>
+    <div class="mobile-header-content-area">
+                    <div class="mobile-search search-style-3 mobile-header-border">
+                <form action="https://nest.botble.com/products" class="form--quick-search" data-ajax-url="https://nest.botble.com/ajax/search-products" method="get">
+                    <input type="text" name="q" class="input-search-product" placeholder="Search for items..." value="" autocomplete="off">
+                    <button type="submit"><i class="fi-rs-search"></i></button>
+                    <div class="panel--search-result"></div>
+                </form>
+            </div>
+                <div class="mobile-menu-wrap mobile-header-border">
+            <!-- mobile menu start -->
+            <nav>
+                <ul class="mobile-menu">
+                <li class=" menu-item-has-children  ">
+                            <span class="menu-expand"></span>
+                        <a href="https://nest.botble.com/" target="_self">
+                <i class="fi-rs-home"></i> Home
+            </a>
+                            <ul class="dropdown">
+                <li class=" ">
+                        <a href="https://nest.botble.com/" target="_self">
+                Home 1
+            </a>
+                    </li>
+            <li class=" ">
+                        <a href="https://nest.botble.com/homepage-2" target="_self">
+                Home 2
+            </a>
+                    </li>
+            <li class=" ">
+                        <a href="https://nest.botble.com/homepage-3" target="_self">
+                Home 3
+            </a>
+                    </li>
+            <li class=" ">
+                        <a href="https://nest.botble.com/homepage-4" target="_self">
+                Home 4
+            </a>
+                    </li>
+            <li class=" ">
+                        <a href="https://nest.botble.com/homepage-5" target="_self">
+                Home 5
+            </a>
+                    </li>
+            <li class=" ">
+                        <a href="https://nest.botble.com/homepage-6" target="_self">
+                Home 6
+            </a>
+                    </li>
+    </ul>
+
+                    </li>
+            <li class=" menu-item-has-children  ">
+                            <span class="menu-expand"></span>
+                        <a href="https://nest.botble.com/products" target="_self">
+                Shop
+            </a>
+                            <ul class="dropdown">
+                <li class=" ">
+                        <a href="https://nest.botble.com/products" target="_self">
+                Shop Grid - Full Width
+            </a>
+                    </li>
+            <li class=" ">
+                        <a href="https://nest.botble.com/products?layout=product-right-sidebar" target="_self">
+                Shop Grid - Right Sidebar
+            </a>
+                    </li>
+            <li class=" ">
+                        <a href="https://nest.botble.com/products?layout=product-left-sidebar" target="_self">
+                Shop Grid - Left Sidebar
+            </a>
+                    </li>
+            <li class=" ">
+                        <a href="https://nest.botble.com/product-categories/milks-and-dairies" target="_self">
+                Products Of Category
+            </a>
+                    </li>
+    </ul>
+
+                    </li>
+            <li class=" menu-item-has-children  ">
+                            <span class="menu-expand"></span>
+                        <a href="https://nest.botble.com/stores" target="_self">
+                Stores
+            </a>
+                            <ul class="dropdown">
+                <li class=" ">
+                        <a href="https://nest.botble.com/stores" target="_self">
+                Stores - Grid
+            </a>
+                    </li>
+            <li class=" ">
+                        <a href="https://nest.botble.com/stores?layout=stores-list" target="_self">
+                Stores - List
+            </a>
+                    </li>
+            <li class=" ">
+                        <a href="https://nest.botble.com/stores/gopro" target="_self">
+                Store - Detail
+            </a>
+                    </li>
+    </ul>
+
+                    </li>
+            <li class=" menu-item-has-children  ">
+                            <span class="menu-expand"></span>
+                        <a href="https://nest.botble.com/products/seeds-of-change-organic-quinoe-digital" target="_self">
+                Product
+            </a>
+                            <ul class="dropdown">
+                <li class=" ">
+                        <a href="https://nest.botble.com/products/seeds-of-change-organic-quinoe-digital" target="_self">
+                Product Right Sidebar
+            </a>
+                    </li>
+            <li class=" ">
+                        <a href="https://nest.botble.com/products/all-natural-italian-style-chicken-meatballs" target="_self">
+                Product Left Sidebar
+            </a>
+                    </li>
+            <li class=" ">
+                        <a href="https://nest.botble.com/products/angies-boomchickapop-sweet-salty-kettle-corn" target="_self">
+                Product Full Width
+            </a>
+                    </li>
+    </ul>
+
+                    </li>
+            <li class=" menu-item-has-children  ">
+                            <span class="menu-expand"></span>
+                        <a href="https://nest.botble.com/blog" target="_self">
+                Blog
+            </a>
+                            <ul class="dropdown">
+                <li class=" ">
+                        <a href="https://nest.botble.com/blog" target="_self">
+                Blog Grid
+            </a>
+                    </li>
+            <li class=" ">
+                        <a href="https://nest.botble.com/blog-list" target="_self">
+                Blog List
+            </a>
+                    </li>
+            <li class=" ">
+                        <a href="https://nest.botble.com/blog-big" target="_self">
+                Blog Big
+            </a>
+                    </li>
+            <li class=" ">
+                        <a href="https://nest.botble.com/blog-wide" target="_self">
+                Blog Wide
+            </a>
+                    </li>
+            <li class=" menu-item-has-children  ">
+                            <span class="menu-expand"></span>
+                        <a href="https://nest.botble.com/blog/4-expert-tips-on-how-to-choose-the-right-mens-wallet" target="_self">
+                Single Post
+            </a>
+                            <ul class="dropdown">
+                <li class=" ">
+                        <a href="https://nest.botble.com/blog/4-expert-tips-on-how-to-choose-the-right-mens-wallet" target="_self">
+                Single Post Right Sidebar
+            </a>
+                    </li>
+            <li class=" ">
+                        <a href="https://nest.botble.com/blog/sexy-clutches-how-to-buy-wear-a-designer-clutch-bag" target="_self">
+                Single Post Left Sidebar
+            </a>
+                    </li>
+            <li class=" ">
+                        <a href="https://nest.botble.com/blog/the-top-2020-handbag-trends-to-know" target="_self">
+                Single Post Full Width
+            </a>
+                    </li>
+            <li class=" ">
+                        <a href="https://nest.botble.com/blog/how-to-match-the-color-of-your-handbag-with-an-outfit" target="_self">
+                Single Post with Product Listing
+            </a>
+                    </li>
+    </ul>
+
+                    </li>
+    </ul>
+
+                    </li>
+            <li class=" ">
+                        <a href="https://nest.botble.com/faq" target="_self">
+                FAQ
+            </a>
+                    </li>
+            <li class=" ">
+                        <a href="https://nest.botble.com/contact" target="_self">
+                Contact
+            </a>
+                    </li>
+    </ul>
+
+            </nav>
+            <!-- mobile menu end -->
+        </div>
+
+        <div class="mobile-header-info-wrap">
+
+                            <div class="single-mobile-header-info">
+                    <a class="mobile-language-active" href="#"><i class="fi-rs-globe"></i> Language <span><i class="fi-rs-angle-down"></i></span></a>
+                    <div class="lang-curr-dropdown lang-dropdown-active">
+                        <ul>
+                            
+                                                            <li><a rel="alternate" hreflang="en" href="https://nest.botble.com/en/themes/nest/css/plugins/images/ui-icons_777777_256x240.html"><img src="../../../../../vendor/core/core/base/img/flags/us.svg" title="English" class="flag" style="height: 16px" alt="English flag"> English</a></li>
+                                                            <li><a rel="alternate" hreflang="vi" href="https://nest.botble.com/vi/themes/nest/css/plugins/images/ui-icons_777777_256x240.html"><img src="../../../../../vendor/core/core/base/img/flags/vn.svg" title="Tiếng Việt" class="flag" style="height: 16px" alt="Tiếng Việt flag"> Tiếng Việt</a></li>
+                                                            <li><a rel="alternate" hreflang="ar" href="https://nest.botble.com/ar/themes/nest/css/plugins/images/ui-icons_777777_256x240.html"><img src="../../../../../vendor/core/core/base/img/flags/sa.svg" title="Arabic" class="flag" style="height: 16px" alt="Arabic flag"> Arabic</a></li>
+                                                    </ul>
+                    </div>
+                </div>
+            
+                            <div class="single-mobile-header-info">
+                    <a class="mobile-language-active" href="#"><i class="fi-rs-money"></i> Currency <span><i class="fi-rs-angle-down"></i></span></a>
+                    <div class="lang-curr-dropdown lang-dropdown-active">
+                        <ul>
+                                                            <li><a href="https://nest.botble.com/currency/switch/USD">USD</a></li>
+                                                            <li><a href="https://nest.botble.com/currency/switch/EUR">EUR</a></li>
+                                                            <li><a href="https://nest.botble.com/currency/switch/VND">VND</a></li>
+                                                    </ul>
+                    </div>
+                </div>
+            
+                                                <div class="single-mobile-header-info">
+                        <a href="https://nest.botble.com/orders/tracking"><i class="fi-rs-shopping-cart"></i> Order tracking</a>
+                    </div>
+                
+                                    <div class="single-mobile-header-info">
+                        <a href="https://nest.botble.com/compare"><i class="fi-rs-refresh"></i> Compare</a>
+                    </div>
+                                <div class="single-mobile-header-info">
+                    <a href="https://nest.botble.com/login"><i class="fi-rs-user"></i> Log In / Sign Up</a>
+                </div>
+                                        <div class="single-mobile-header-info">
+                    <a href="tel:1900 - 888"><i class="fi-rs-headphones"></i> 1900 - 888</a>
+                </div>
+                    </div>
+                    <div class="mobile-social-icon mb-50">
+                <p class="mb-15 font-heading h6 me-2">Follow Us</p>
+                                                            <a href="https://www.facebook.com/" title="Facebook">
+                            <img src="../../../../../storage/general/facebook.png" alt="Facebook">
+                        </a>
+                                                                                <a href="https://www.twitter.com/" title="Twitter">
+                            <img src="../../../../../storage/general/twitter.png" alt="Twitter">
+                        </a>
+                                                                                <a href="https://www.instagram.com/" title="Instagram">
+                            <img src="../../../../../storage/general/instagram.png" alt="Instagram">
+                        </a>
+                                                                                <a href="https://www.pinterest.com/" title="Pinterest">
+                            <img src="../../../../../storage/general/pinterest.png" alt="Pinterest">
+                        </a>
+                                                                                <a href="https://www.youtube.com/" title="Youtube">
+                            <img src="../../../../../storage/general/youtube.png" alt="Youtube">
+                        </a>
+                                                </div>
+                <div class="site-copyright">Copyright © 2023 Nest all rights reserved. Powered by Botble.</div>
+    </div>
+</div>
+</div>
+<!--End header-->
+
+
+<main class="main page-404">
+    <div class="page-content pt-150 pb-150">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 col-lg-10 col-md-12 m-auto text-center">
+                    <p class="mb-20">
+                        <img src="../../../imgs/page/page-404.png" alt="Nest - Laravel Multipurpose eCommerce Script" class="hover-up">
+                    </p>
+                    <h2 class="display-2 mb-30">Page Not Found</h2>
+                    <p class="font-lg text-grey-700 mb-30">
+                        The link you clicked may be broken or the page may have been removed.<br> visit the <a href="https://nest.botble.com"> <span> Homepage</span></a> or <a href="/cdn-cgi/l/email-protection#a8"><span>Contact us</span></a> about the problem.
+                    </p>
+                                            <div class="search-form form-group">
+                            <form action="https://nest.botble.com/products" method="GET">
+                                <input name="q" placeholder="Search..." type="text">
+                                <button type="submit"><i class="fi-rs-search"></i></button>
+                            </form>
+                        </div>
+                                        <a class="btn btn-default submit-auto-width font-xs hover-up mt-30" href="https://nest.botble.com"><i class="fi-rs-home mr-5"></i> Back To Home Page</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="main">
+        
+
+                <div class="container pb-30  wow animate__animated animate__fadeInUp" data-wow-delay="0">
+            <div class="row align-items-center">
+                <div class="col-12 mb-30">
+                    <div class="footer-bottom"></div>
+                </div>
+                                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <p class="font-sm mb-0">Copyright © 2023 Nest all rights reserved. Powered by Botble.</p>
+                    </div>
+                                                    <div class="col-xl-4 col-lg-6 text-center d-none d-xl-block">
+                        <div class="hotline d-lg-inline-flex w-full align-items-center justify-content-center">
+                            <img src="../../../imgs/theme/icons/phone-call.svg" alt="hotline">
+                            <p>1900 - 888 <span>24/7 Support Center</span></p>
+                        </div>
+                    </div>
+                                                                            <div class="col-xl-4 col-lg-6 col-md-6 text-end d-none d-md-block">
+                            <div class="mobile-social-icon">
+                                <p class="font-heading h6 me-2">Follow Us</p>
+                                                                                                            <a href="https://www.facebook.com/" title="Facebook">
+                                            <img src="../../../../../storage/general/facebook.png" loading="lazy" alt="Facebook">
+                                        </a>
+                                                                                                                                                <a href="https://www.twitter.com/" title="Twitter">
+                                            <img src="../../../../../storage/general/twitter.png" loading="lazy" alt="Twitter">
+                                        </a>
+                                                                                                                                                <a href="https://www.instagram.com/" title="Instagram">
+                                            <img src="../../../../../storage/general/instagram.png" loading="lazy" alt="Instagram">
+                                        </a>
+                                                                                                                                                <a href="https://www.pinterest.com/" title="Pinterest">
+                                            <img src="../../../../../storage/general/pinterest.png" loading="lazy" alt="Pinterest">
+                                        </a>
+                                                                                                                                                <a href="https://www.youtube.com/" title="Youtube">
+                                            <img src="../../../../../storage/general/youtube.png" loading="lazy" alt="Youtube">
+                                        </a>
+                                                                                                </div>
+                            <p class="font-sm">Up to 15% discount on your first subscribe</p>
+                        </div>
+                                                </div>
+        </div>
+    </footer>
+
+    <div class="modal fade custom-modal" id="quick-view-modal" tabindex="-1" aria-labelledby="quick-view-modal-label" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <div class="half-circle-spinner loading-spinner">
+                        <div class="circle circle-1"></div>
+                        <div class="circle circle-2"></div>
+                    </div>
+                    <div class="quick-view-content"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script data-cfasync="false" src="../../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        window.trans = {
+            "Views": "Views",
+            "Read more": "Read more",
+            "days": "days",
+            "hours": "hours",
+            "mins": "mins",
+            "sec": "sec",
+            "No reviews!": "No reviews!",
+            "Sold By": "Sold By",
+            "Quick View": "Quick View",
+            "Add To Wishlist": "Add To Wishlist",
+            "Add To Compare": "Add To Compare",
+            "Out Of Stock": "Out Of Stock",
+            "Add To Cart": "Add To Cart",
+            "Add": "Add",
+        };
+
+        window.siteUrl = "https://nest.botble.com";
+
+                    window.currencies = {"display_big_money":false,"billion":"billion","million":"million","is_prefix_symbol":1,"symbol":"$","title":"USD","decimal_separator":".","thousands_separator":",","number_after_dot":2,"show_symbol_or_title":true};
+            </script>
+
+    <script src="../../../js/vendor/jquery-3.6.0.min.js"></script>
+<script src="../../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../../../js/plugins/slick.js"></script>
+<script src="../../../js/plugins/jquery.syotimer.min.js"></script>
+<script src="../../../js/plugins/wow.js"></script>
+<script src="../../../js/plugins/waypoints.js"></script>
+<script src="../../../js/plugins/jquery.countdown.min.js"></script>
+<script src="../../../js/plugins/scrollup.js"></script>
+<script src="../../../js/plugins/jquery.vticker-min.js"></script>
+<script src="../../../js/backend_v%3D1.19.5.js"></script>
+<script src="../../../js/main_v%3D1.19.5.js"></script>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" defer="" src="https://www.googletagmanager.com/gtag/js?id=G-76NX8HY29D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-76NX8HY29D');
+</script>
+
+<div class="footer-mobile">
+    <ul class="menu--footer">
+        <li>
+            <a href="https://nest.botble.com">
+                <i class="fi-rs-home"></i>
+                <span>Home</span>
+            </a>
+        </li>
+                    <li>
+                <a class="toggle--sidebar" href="https://nest.botble.com/products">
+                    <i class="fi-rs-apps"></i>
+                    <span>Shop</span>
+                </a>
+            </li>
+                            <li>
+                    <a class="toggle--sidebar" href="https://nest.botble.com/cart">
+                        <i class="fi-rs-shopping-cart mini-cart-icon">
+                            <span class="cart-counter">0</span>
+                        </i>
+                        <span>Cart</span>
+                    </a>
+                </li>
+                        <li>
+                <a href="#" class="trigger-mobile-menu">
+                    <i class="fi-rs-search"></i>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://nest.botble.com/customer/overview">
+                    <i class="fi-rs-user"></i>
+                    <span>Account</span>
+                </a>
+            </li>
+            </ul>
+</div>
+
+
+
+        
+
+
+
+
+</body></html>
